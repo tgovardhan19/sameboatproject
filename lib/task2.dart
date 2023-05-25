@@ -12,13 +12,10 @@ class Task2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff1F1932),
-      body: ListView(
-        scrollDirection: Axis.vertical,
-        children: [
-          Column(
-            children: [
-              Row(
+      appBar: AppBar(
+        backgroundColor: Color(0xff1F1932),
+        toolbarHeight: 60,
+        title:  Row(
                 children: [
                   const Icon(
                       Icons.arrow_back_ios_new_sharp,
@@ -61,7 +58,7 @@ class Task2 extends StatelessWidget {
                         ),
                       ),
                     const Padding(
-                        padding:  EdgeInsets.only(left: 80),
+                        padding:  EdgeInsets.only(left: 50),
                         child: Icon(
                           Icons.more_horiz,
                           color: Colors.white,
@@ -70,7 +67,13 @@ class Task2 extends StatelessWidget {
                       ),
                 ],
               ),
-
+      ),
+      backgroundColor: Color(0xff1F1932),
+      body: ListView(
+        scrollDirection: Axis.vertical,
+        children: [
+          Column(
+            children: [
             const  SizedBox(
                 height: 10,
               ),
@@ -330,33 +333,7 @@ class Task2 extends StatelessWidget {
                           ),
                       ],
                     ),
-                    Padding(
-                            padding: const EdgeInsets.only(left: 150,top:30),
-                            child: Container(
-                              height: 45,
-                              width: 210,
-                              decoration:const BoxDecoration(
-                        color: Color(0xff6411AD),
-                        borderRadius:BorderRadius.only(
-                        bottomLeft: Radius.circular(20),
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
-                      ),
-                      ),
-                      child:
-                      const  Padding(
-                          padding:  EdgeInsets.only(left: 20),
-                          child: Text(
-                              'Lorem Ipsum is simply dummy',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15
-                              ),
-                              ),
-                         ),
-                      
-                            ),
-                          ),
+                    rightMessages('Lorem Ipsum is simply dummy'),
                         const  Padding(
                             padding:  EdgeInsets.only(left: 300),
                             child: Text(
@@ -365,86 +342,18 @@ class Task2 extends StatelessWidget {
                               ),
                               ),
                           ),
-                          Row(
-                            children: [
-                               const Padding(
-                                  padding: const EdgeInsets.only(left: 20,top:20),
-                                  child: CircleAvatar(
-                                    backgroundImage: NetworkImage(
-                                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnqBOj-5q81TpnQv_0GyyWqVgkXANtb_hDHqM-Z4F1Bg&usqp=CAU&ec=48665699'
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(width: 10),
-                                Padding(
-                                  padding: const EdgeInsets.only(top:20),
-                                  child: Container(
-                                    height: 35,
-                                    width: 170,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      borderRadius: BorderRadius.circular(30)
-                                    ),
-                                    child:const Padding(
-                                      padding: const EdgeInsets.only(left: 20),
-                                      child: Text('Lorem Ipsum is simply dummy'),
-                                    ),
-                                  ),
-                                ),
-                            ],
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 20),
-                            child: Container(
-                              height: 60,
-                                      width: 240,
-                                      decoration:const BoxDecoration(
-                                        color: Colors.grey,
-                                        borderRadius:BorderRadius.only(
-                        bottomRight: Radius.circular(20),
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
-                      ),
-                                      ),
-                                      child:const Padding(
-                                        padding:  EdgeInsets.only(left: 20,top:10),
-                                        child: Text(
-                                          'Lorem Ipsum is simply dummy \n text of the printing and',
-                                          ),
-                                      ),
-                            ),
-                          ),
+                          leftMessages('Lorem Ipsum is simply dummy'),
+                        
+                          
+
                         const  Padding(
                             padding:  EdgeInsets.only(right: 200),
                             child: Text('12:00 AM'),
                           ),
-                            Padding(
-                            padding: const EdgeInsets.only(left: 150,top:20),
-                            child: Container(
-                              height: 45,
-                              width: 210,
-                              decoration:const BoxDecoration(
-                        color: Color(0xff6411AD),
-                        borderRadius:BorderRadius.only(
-                        bottomLeft: Radius.circular(20),
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
-                      ),
-                      ),
-                      child:
-                      const  Padding(
-                          padding:  EdgeInsets.only(left: 20),
-                          child: Text(
-                              'Lorem Ipsum is simply dummy',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15
-                              ),
-                              ),
-                        ),
-                            ),
-                          ),
-                           const  Padding(
+
+                          rightMessages('Lorem Ipsum is simply dummy'),
+
+                          const  Padding(
                             padding:  EdgeInsets.only(left: 300),
                             child: Text(
                               '12:00 AM',
@@ -452,55 +361,8 @@ class Task2 extends StatelessWidget {
                               ),
                               ),
                           ),
-                           Row(
-                            children: [
-                               const Padding(
-                                  padding: const EdgeInsets.only(left: 20,top:20),
-                                  child: CircleAvatar(
-                                    backgroundImage: NetworkImage(
-                                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnqBOj-5q81TpnQv_0GyyWqVgkXANtb_hDHqM-Z4F1Bg&usqp=CAU&ec=48665699'
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(width: 10),
-                                Padding(
-                                  padding: const EdgeInsets.only(top:20),
-                                  child: Container(
-                                    height: 35,
-                                    width: 170,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      borderRadius: BorderRadius.circular(30)
-                                    ),
-                                    child:const Padding(
-                                      padding: const EdgeInsets.only(left: 20),
-                                      child: Text('Lorem Ipsum is simply dummy'),
-                                    ),
-                                  ),
-                                ),
-                            ],
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 20),
-                            child: Container(
-                              height: 60,
-                                      width: 240,
-                                      decoration:const BoxDecoration(
-                                        color: Colors.grey,
-                                        borderRadius:BorderRadius.only(
-                        bottomRight: Radius.circular(20),
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
-                      ),
-                                      ),
-                                      child:const Padding(
-                                        padding:  EdgeInsets.only(left: 20,top:10),
-                                        child: Text(
-                                          'Lorem Ipsum is simply dummy \n text of the printing and',
-                                          ),
-                                      ),
-                            ),
-                          ),
+                          leftMessages('Lorem Ipsum is simply dummy'),
+                          
                         const  Padding(
                             padding:  EdgeInsets.only(right: 200),
                             child: Text('12:00 AM'),
@@ -516,10 +378,15 @@ class Task2 extends StatelessWidget {
                             ),
                           ),
 
-
-                        Column(
-                          children: [
-                            Row(
+                        Center(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Color(0xffE3E3E3),
+                              border: Border.all(
+                                color: Color(0xffE3E3E3),
+                              )
+                            ),
+                            child: Row(
                               children: [
                                 
                                   Padding(
@@ -528,8 +395,8 @@ class Task2 extends StatelessWidget {
                                       height: 50,
                                       width: 50,
                                       decoration:const BoxDecoration(
-                                                    color: Colors.black,
-                                                    borderRadius:BorderRadius.only(
+                                            color: Colors.black,
+                                            borderRadius:BorderRadius.only(
                                     bottomRight: Radius.circular(30),
                                     bottomLeft: Radius.circular(30),
                                     topLeft: Radius.circular(30),
@@ -568,7 +435,7 @@ class Task2 extends StatelessWidget {
                                             focusedBorder: InputBorder.none
                                           ),
                                         ),
-                                      ),  
+                                      ),
                                   ),
                                     ),
 
@@ -601,7 +468,7 @@ class Task2 extends StatelessWidget {
 
                               ],
                             ),
-                          ],
+                          ),
                         ),
                           
                   ],
@@ -642,4 +509,107 @@ class Task2 extends StatelessWidget {
       ),
     );
   }
+
+  Widget rightMessages (String text) {
+    return  Padding(
+                            padding: const EdgeInsets.only(left: 150,top:30),
+                            child: Container(
+                              height: 45,
+                              width: 210,
+                              decoration:const BoxDecoration(
+                        color: Color(0xff6411AD),
+                        borderRadius:BorderRadius.only(
+                        bottomLeft: Radius.circular(20),
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                      ),
+                      ),
+                      child:
+                      const  Padding(
+                          padding:  EdgeInsets.only(left: 20),
+                          child: Text(
+                              'Lorem Ipsum is simply dummy',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 15
+                              ),
+                              ),
+                        ),
+                            ),
+                            
+                          );
+  }
+  Widget leftMessages (String text) {
+    return   
+        Column(
+          children: [
+            Row(
+                                    children: [
+                                      const Padding(
+                                          padding: const EdgeInsets.only(left: 20,top:20),
+                                          child: CircleAvatar(
+                                            backgroundImage: NetworkImage(
+                                              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnqBOj-5q81TpnQv_0GyyWqVgkXANtb_hDHqM-Z4F1Bg&usqp=CAU&ec=48665699'
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(width: 10),
+                                        Padding(
+                                          padding: const EdgeInsets.only(top:20),
+                                          child: Container(
+                                            height: 35,
+                                            width: 170,
+                                            decoration: BoxDecoration(
+                                              color: Colors.grey,
+                                              borderRadius: BorderRadius.circular(30)
+                                            ),
+                                            child:const Padding(
+                                              padding: const EdgeInsets.only(left: 20),
+                                              child: Text('Lorem Ipsum is simply dummy'),
+                                            ),
+                                          ),
+                                        ),
+                                    ]
+            ),
+        
+                              
+    
+
+                          Padding(
+                            padding: const EdgeInsets.only(right: 20),
+                            child: Container(
+                              height: 60,
+                                      width: 240,
+                                      decoration:const BoxDecoration(
+                                        color: Colors.grey,
+                                        borderRadius:BorderRadius.only(
+                        bottomRight: Radius.circular(20),
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                      ),
+                                      ),
+                                      child:const Padding(
+                                        padding:  EdgeInsets.only(left: 20,top:10),
+                                        child: Text(
+                                          'Lorem Ipsum is simply dummy \n text of the printing and',
+                                          ),
+                                      ),
+                            ),
+                          ),
+          ]
+        );
+                                                          
+    
+                        
+  }
+
 }
+
+
+
+
+
+
+
+
+
