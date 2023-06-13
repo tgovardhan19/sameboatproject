@@ -14,7 +14,8 @@ class Task3 extends StatelessWidget {
         backgroundColor: Color(0xff1F1932),
         toolbarHeight: 80,
         actions: [
-          IconButton(onPressed: (){},
+          IconButton(
+            onPressed: (){},
           icon:const Icon(
             Icons.more_horiz,
             color: Color(0xffFFFFFF),
@@ -80,8 +81,6 @@ class Task3 extends StatelessWidget {
             children: [
                   Container(
                       height: MediaQuery.of(context).size.height * 1.9,
-                    //width: MediaQuery.of(context).size.width,
-                    //height: 1000,
                     width: 430,
                     decoration: const BoxDecoration(
                     color: Colors.white,
@@ -326,28 +325,33 @@ class Task3 extends StatelessWidget {
                           ),
                                   ),
                                         ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 210),
-                                      child: Center(
-                                      child: Container(
-                                        height: 44,
-                                        width: 209,
-                                        decoration: BoxDecoration(
-                                          color: Color(0xff1F1932),
-                                          borderRadius: BorderRadius.circular(30)
+
+                                        Padding(
+                                          padding: const EdgeInsets.only(top: 210),
+                                          child: Center(
+                                            child: Container(
+                                              height: 48,
+                                              width: 200,
+                                decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(30),
+                            color: Color(0xff1F1932),
+                          ),
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              child: Text('Declare Winner'),
+                                  style: ElevatedButton.styleFrom(
+                                  primary: Colors.transparent,
+                                      elevation: 0,
+                                    textStyle:const TextStyle(
+                                            color: Color(0xffF0EFF5),
+                                              fontSize: 15,
+                                              ),
+                                              ),
+                                              ),
+                                              ),
+                                          ),
                                         ),
-                                        child:const Center(
-                                          child: Text(
-                                            'Declare Winner',
-                                            style: TextStyle(
-                                              color: Color(0xffF0EFF5),
-                                              fontSize: 15
-                                            ),
-                                            ),
-                                        ),
-                                      ),
-                                  ),
-                                    ),
+            
                                     ],
                                   ),
                   
@@ -468,27 +472,30 @@ class Task3 extends StatelessWidget {
                                   ),
                                         ),
                                     Padding(
-                                      padding: const EdgeInsets.only(top: 165),
-                                      child: Center(
-                                      child: Container(
-                                        height: 44,
-                                        width: 209,
-                                        decoration: BoxDecoration(
-                                          color: Color(0xff1F1932),
-                                          borderRadius: BorderRadius.circular(25)
+                                          padding: const EdgeInsets.only(top: 165),
+                                          child: Center(
+                                            child: Container(
+                                              height: 48,
+                                              width: 200,
+                                decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(30),
+                            color:const Color(0xff1F1932),
+                          ),
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              child: Text('Declare Winner'),
+                                  style: ElevatedButton.styleFrom(
+                                    primary: Colors.transparent,
+                                      elevation: 0,
+                                    textStyle:const TextStyle(
+                                            color: Color(0xffF0EFF5),
+                                              fontSize: 15,
+                                              ),
+                                              ),
+                                              ),
+                                              ),
+                                          ),
                                         ),
-                                        child:const Center(
-                                          child: Text(
-                                            'Declare Winner',
-                                            style: TextStyle(
-                                              color: Color(0xffF0EFF5),
-                                              fontSize: 15
-                                            ),
-                                            ),
-                                        ),
-                                      ),
-                                  ),
-                                    ),
                                     ],
                                   ),
                   
