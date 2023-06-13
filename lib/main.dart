@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tasks/task2.dart';
+import 'package:tasks/task3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
       ),
       //home: Task(),
       //home: Task1(),
-      home: Task2(),
+     // home: Task2(),
+      home: Task3(),
     );
   }
 }
